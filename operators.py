@@ -1,6 +1,6 @@
 # Addition (+)
 # If there's a float involved, the answer will be a float.
-print(.5 + 5.4 + 2)
+print(5.0 + 2)  # 7.0
 
 # Subtraction (-)
 print(1 - 4)
@@ -15,7 +15,7 @@ print(3 * 7)
 print(3**2)
 
 # Integer Division - Rounds down
-print(3//4)
+print(10//3)
 
 # Modulo - Remainder
 print(10 % 3)
