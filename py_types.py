@@ -11,7 +11,7 @@ time = 12
 print(int(age))
 
 # convert to float
-print(int(age))
+print(float(age))
 
 # convert to string
 print(str(time))
