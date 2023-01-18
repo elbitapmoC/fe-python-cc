@@ -34,7 +34,7 @@ while units != 'F' and units != 'C' and units != 'K':
     units = get_units()
 
 temp = get_temp()
-while (type(temp) != int):
+while (not temp.isnumeric()):
     print("Try again, make sure you're entering a NUMBER.")
     temp = get_temp()
 
