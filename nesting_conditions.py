@@ -29,12 +29,12 @@ def checkTemp():
 
 
 units = get_units()
-while (units != 'F' or units != 'C' or units != 'K'):
+while units != 'F' and units != 'C' and units != 'K':
     print("Try again, make sure you enter: 'F', 'C' or 'K'.")
     units = get_units()
 
 temp = get_temp()
-while ((type(temp) != int)):
+while (type(temp) != int):
     print("Try again, make sure you're entering a NUMBER.")
     temp = get_temp()
 
