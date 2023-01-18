@@ -16,3 +16,8 @@ elif total == 12:
     print(f"{fName} {lName}, ON POINT!")
 else:
     print(f"{fName} {lName}, SHORT!")
+
+# Order of operations:
+# not
+# and
+# or
