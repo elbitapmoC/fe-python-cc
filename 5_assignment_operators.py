@@ -1,12 +1,3 @@
-#   __  __             _
-#  |  \/  |           (_)
-#  | \  / | __ _  __ _ _  ___
-#  | |\/| |/ _` |/ _` | |/ __|
-#  | |  | | (_| | (_| | | (__
-#  |_|  |_|\__,_|\__, |_|\___|
-#                 __/ |
-#                |___/
-
 # Create a variable called secret_num and set it to any number you'd like:
 secret_num = 777
 
