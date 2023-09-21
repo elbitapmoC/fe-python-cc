@@ -12,10 +12,10 @@ print(4 / 2)
 print(3 * 7)
 
 # Exponents
-print(3**2)
+print(3**2)  # 3*3 = 9
 
 # Integer Division - Rounds down
-print(10//3)
+print(10//3)  # 10/3 = 3
 
 # Modulo - Remainder
 print(10 % 3)
