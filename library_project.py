@@ -1,3 +1,5 @@
+import uuid
+
 # Online Book System (OOP)
 # Similiar to Amazon Kindle (for Short shorties)
 '''
@@ -67,20 +69,29 @@ class User:
 class Library:
     def __init__(self):
         self.collection = dict()
-        self.checkedout_books = dict()
+        self.users = dict()
+        self.checkedout_books = []
 
-    def checkout(self):
+    def checkout_book(self, book_id):
         # due set at checkout
         # user_id and book_id passed in to keep track.
+        self.collection.book_id
         print('Book has been checked out! Enjoy!')
 
-    def check_for_availability(self, book_id):
+    def check_availability(self, book_id):
         if book_id in checkedout_books:
             print('Someone is currently using this book. Try again next week!')
         else:
             checkout(book_id)
 
-    def return_book(self):
-        if (self.in_stock == false):
-            self.in_stock = true
-            print('Book has been returned, we hope you liked what you read!')
+    def return_book(self, book_id):
+        self.checkedout_books.remove(book_id)
+        print('Book has been returned, we hope you liked what you read!')
+
+    def add_book_to_library(self, title, content):
+        new_book = Book(uuid.uuid1, title, content)
+        self.collection[new_book.id] = new_book
+
+    def add_user_to_library(self, name, dob):
+        new_user = User(uuid.uuid1, name, dob)
+        self.users[new_book.id] = new_book
